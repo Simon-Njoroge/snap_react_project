@@ -1,0 +1,62 @@
+.entire{
+    display: flex;
+    margin:2% 3%;
+    background-image: url('../images/image-hero-desktop.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 560px 100%;
+
+}
+.leftside{
+    width: 50%;
+}
+.leftside h1{
+    font-size: 100px;
+}
+.paragraph{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.learnmore{
+    margin-top: 30px;
+}
+.logos{
+   display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.learnmore a{
+text-decoration: none;
+border: 1px solid black;
+background-color: black;
+color: white;
+cursor: pointer;
+padding: 10px;
+border-radius: 5px;
+&:hover{
+color: black;
+background-color: white;
+}
+}
+@media only screen and (max-width: 768px){
+   
+    .entire{
+        display: block;
+        margin:5% 5%;
+        padding-top: 50%;
+        background-image: url('../images/image-hero-mobile.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .leftside h1{
+        font-size: 50px;
+    }
+    .learnmore{
+        margin-top: 30px;
+        text-align: center;
+    }
+}

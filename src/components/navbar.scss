@@ -1,0 +1,242 @@
+.whole {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 3%;
+}
+
+#close {
+    display: none;
+}
+
+#menu {
+    display: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    display: flex;
+    gap: 20px;
+}
+
+.img {
+    margin-top: 18px;
+}
+
+.navbar1 {
+    display: flex;
+    margin-top: 18px;
+}
+
+.navbar1 a {
+    padding: 10px;
+    color: grey;
+    cursor: pointer;
+
+    &:hover {
+        color: black;
+    }
+}
+
+
+.regester {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.regester a {
+    padding: 0%;
+    margin-top: 18px;
+}
+
+#regi{
+    border: 2px solid black;
+    padding: 1px;
+    border-radius: 2px;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    &:hover{
+        background-color: bisque;
+    }
+}
+.extra {
+    position: absolute;
+    margin-top: 20px;
+    background-color: rgba(0,0 ,0 ,0.2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: none;
+    color: white;
+}
+.extra a{
+    color: bisque;
+}
+.features .extra {
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgba(0,0 ,0 ,0.2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: block;
+    transition: display .5s ease-in-out;
+}
+.Hfeatures .extra {
+    display: none;
+    transition: display .9s ease-out;
+}
+.extra1 {
+    position: absolute;
+    left: 270px;
+    margin-top: 20px;
+    background-color: rgba(0,0 ,0 ,0.2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    background-color: none;
+}
+.extra1 a{
+    color: bisque;
+}
+.companies .extra1 {
+    position: absolute;
+    left: 280px;
+    margin-top: 5px;
+    background-color: rgba(0,0 ,0 ,0.2);
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+.Hcompanies .extra1 {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    #menu {
+        display: block;
+        position: absolute;
+        right: 4%;
+        margin: 3% 0%;
+        cursor: pointer;
+    }
+    .navbar1 {
+        margin-top: 0%;
+        display: none;
+        position: absolute;
+        right: -200px;
+        top: 0%;
+        background-color: white;
+        padding-left: 14.5px;
+        border-radius: 2px 2px 0 0;
+        transition: right .5s ease-in-out;
+        height: 100vh;
+        width: 50%;
+    }
+   
+    .regester {
+        display: none;
+        margin-top: 100px;
+        position: absolute;
+        right: -200px;
+        padding-bottom: 10px;
+        transition: right .5s ease-in-out;
+    }
+
+    .whole {
+        display: block;
+        margin: 1% 5%;
+    } 
+    .navbar1 div {
+        margin-bottom:10px;
+    }
+   
+    #close {
+        display: block;
+        position: relative;
+        right: -80%;
+        width: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .show .navbar1 {
+        margin-top: 0%;
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 0%;
+        background-color: white;
+        padding-left: 14.5px;
+        border-radius: 2px 2px 0 0;
+        transition: right .5s ease-in-out;
+        height: 100vh;
+        width: 50%;
+    }
+
+    .show .regester {
+        display: flex;
+        margin-top: 100px;
+        position: absolute;
+        right: 12%;
+        padding-bottom: 10px;
+        transition: right .5s ease-in-out;
+    }
+
+    .show #menu {
+        display: none;
+        position: absolute;
+        right: 4%;
+        margin: 3% 0%;
+    }
+
+    .hide .navbar1 {
+        display: none;
+        position: absolute;
+        right: -200px;
+        top: 1%;
+        transition: right .5s ease-in-out;
+    }
+
+    .hide .regester {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        right: -200px;
+        transition: right .5s ease-in-out;
+    }
+
+    .hide #menu {
+        display: block;
+        position: absolute;
+        right: 4%;
+        margin: 3% 0%;
+        transition: right .5s ease-in-out;
+    }
+
+    .features .regester {
+        display: flex;
+        margin-top: 350px;
+        position: absolute;
+        right: 12%;
+        padding-bottom: 10px;
+        transition: right .5s ease-in-out;
+    }
+    .companies .regester {
+        display: flex;
+        margin-top: 350px;
+    }
+    .companies .extra1 {
+        position: relative;
+        left: 2px;
+    }
+    .features .extra {
+        position: relative;
+    }
+}
